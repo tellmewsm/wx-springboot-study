@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/wx-springboot-create/wx-springboot-create.iml" filepath="$PROJECT_DIR$/wx-springboot-create/wx-springboot-create.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wx-springboot-jdbc/wx-springboot-jdbc.iml" filepath="$PROJECT_DIR$/wx-springboot-jdbc/wx-springboot-jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wx-springboot-properties/wx-springboot-properties.iml" filepath="$PROJECT_DIR$/wx-springboot-properties/wx-springboot-properties.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wx-springboot-resources/wx-springboot-resources.iml" filepath="$PROJECT_DIR$/wx-springboot-resources/wx-springboot-resources.iml" />
+    </modules>
+  </component>
+</project>

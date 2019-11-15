@@ -1,0 +1,41 @@
+# 指定激活环境
+spring:
+  profiles:
+    active: test
+
+#开发环境
+---
+spring:
+  profiles: dev
+User:
+  id: 1
+  name: wx
+  description: 学习springboot
+
+server:
+  port: 8081
+
+#生产环境
+---
+spring:
+  profiles: prod
+User:
+  id: 2
+  name: zj
+  description: 学习mysql
+
+server:
+  port: 8082
+
+#测试环境
+---
+spring:
+  profiles: test
+User:
+  id: 3
+  name: cx
+  description: 在出差
+
+server:
+  port: 8083
+

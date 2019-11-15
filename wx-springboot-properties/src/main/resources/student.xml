@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="student" class="com.wuxi.entity.Student">
+        <property name="number" value="1002"/>
+        <property name="name" value="李四"/>
+        <property name="classes" value="经济学"/>
+    </bean>
+
+</beans>
