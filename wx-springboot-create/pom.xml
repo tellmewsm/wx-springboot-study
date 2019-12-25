@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.wuxi</groupId>
-    <artifactId>springboot-create</artifactId>
+    <artifactId>wx-springboot-create</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-create</name>
+    <name>wx-springboot-create</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
