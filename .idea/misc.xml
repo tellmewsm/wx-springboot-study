@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/wx-springboot-jdbc/pom.xml" />
         <option value="$PROJECT_DIR$/wx-springboot-properties/pom.xml" />
         <option value="$PROJECT_DIR$/wx-springboot-resources/pom.xml" />
+        <option value="$PROJECT_DIR$/wx-springboot-mybatis/pom.xml" />
       </list>
     </option>
   </component>

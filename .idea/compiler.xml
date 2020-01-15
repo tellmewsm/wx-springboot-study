@@ -8,21 +8,28 @@
         <outputRelativeToContentRoot value="true" />
         <module name="wx-springboot-create" />
         <module name="wx-springboot-jdbc" />
+        <module name="wx-springboot-mybatis" />
         <module name="wx-springboot-properties" />
         <module name="wx-springboot-resources" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="demo" target="1.8" />
+      <module name="wx-springboot-cache" target="1.8" />
       <module name="wx-springboot-create" target="1.8" />
       <module name="wx-springboot-jdbc" target="1.8" />
+      <module name="wx-springboot-mybatis" target="1.8" />
       <module name="wx-springboot-properties" target="1.8" />
       <module name="wx-springboot-resources" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo" options="-parameters" />
+      <module name="wx-springboot-cache" options="-parameters" />
       <module name="wx-springboot-create" options="-parameters" />
       <module name="wx-springboot-jdbc" options="-parameters" />
+      <module name="wx-springboot-mybatis" options="-parameters" />
       <module name="wx-springboot-properties" options="-parameters" />
       <module name="wx-springboot-resources" options="-parameters" />
     </option>

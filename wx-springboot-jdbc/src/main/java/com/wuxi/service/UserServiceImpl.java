@@ -1,4 +1,4 @@
-package com.wuxi.service.impl;
+package com.wuxi.service;
 
 import com.wuxi.dao.UserDao;
 import com.wuxi.entity.User;

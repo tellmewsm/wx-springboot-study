@@ -7,5 +7,5 @@ CREATE TABLE `wx_User` (
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 BEGIN;
-INSERT INTO `wx_User` VALUES ('1', 'wx', '他在学习springboot'), ('2', 'cz', '他在复习mysql');
+INSERT INTO `wx_User` VALUES ('1', 'wuxi', '他在学习springboot'), ('2', 'cz', '他在复习mysql');
 COMMIT;

@@ -3,6 +3,7 @@
   <component name="Encoding" native2AsciiForPropertiesFiles="true" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$/wx-springboot-create" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wx-springboot-jdbc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wx-springboot-mybatis" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wx-springboot-properties" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wx-springboot-resources" charset="UTF-8" />
   </component>

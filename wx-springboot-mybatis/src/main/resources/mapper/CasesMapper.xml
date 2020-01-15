@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wuxi.dao.CasesDao">
+    <resultMap id="BaseResultMap" type="com.wuxi.domain.Cases">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="project" property="project" jdbcType="VARCHAR"/>
+        <result column="status" property="status" jdbcType="VARCHAR"/>
+        <result column="domain" property="domain" jdbcType="VARCHAR"/>
+        <result column="requesttype" property="requesttype" jdbcType="VARCHAR"/>
+        <result column="parametertype" property="parametertype"
+                jdbcType="VARCHAR"/>
+        <result column="content" property="content" jdbcType="VARCHAR"/>
+        <result column="result" property="result" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <parameterMap id="Cases" type="com.wuxi.domain.Cases"/>
+
+    <sql id="allcases">
+		id,project,status,domain,requesttype,parametertype,content,result
+	</sql>
+
+    <insert id="SaveCases" parameterMap="Cases" useGeneratedKeys="true"
+            keyProperty="id">
+		insert into
+		cases(project,status,domain,requesttype,parametertype,content,result)
+		values
+		(#{project},#{status},#{domain},#{requesttype},#{parametertype},#{content},#{result})
+	</insert>
+
+    <select id="findAllCases" resultMap="BaseResultMap">
+        select
+        <include refid="allcases"/>
+        from cases
+    </select>
+
+    <!-- selectcases写在了dao层注解 -->
+
+    <select id="findCasesById" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+		select * from
+		cases
+		where
+		id =
+		#{id}
+	</select>
+
+
+    <delete id="deleteCases" parameterType="java.lang.Integer">
+		delete from
+		cases
+		where
+		id =
+		#{id}
+	</delete>
+
+    <update id="updateByPrimaryKey"  parameterType="com.wuxi.domain.Cases" >
+		update cases
+		set  project = #{project,jdbcType=VARCHAR},
+		status = #{status,jdbcType=VARCHAR},
+		domain = #{domain,jdbcType=VARCHAR},
+		requesttype = #{requesttype,jdbcType=VARCHAR},
+		parametertype = #{parametertype,jdbcType=VARCHAR},
+		content = #{content,jdbcType=VARCHAR},
+		result = #{result,jdbcType=VARCHAR}
+		where id = #{id,jdbcType=INTEGER}
+	</update>
+</mapper>
